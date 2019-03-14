@@ -5,7 +5,7 @@ date = "2019-03-14"
 keywords = ["Grafana", "New City Energy", "GrafanaCon"]
 cover_opacity = "0.4"
 cover_blur = "1px"
-description = "Oracle Cloud Infrastructure now has a Grafana datasource"
+description = "How Grafana is enabling Washington D.C. to reduce energy costs as well as its carbon footprint."
 categories = ["Grafana", "GrafanaCon"]
 excerpt = "How Grafana is enabling Washington D.C. to reduce energy costs as well as its carbon footprint."
 +++
