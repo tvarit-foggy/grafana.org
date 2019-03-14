@@ -40,7 +40,7 @@ So one of the goals for the Built Environment portfolio for the city of D.C. is 
 
 ### Enter Grafana
 
-The platform is now using Grafana to visualize these key metrics. Aside from reducing energy usage, an important goal of this initiative is to provide a comfortable and healthy work space for the people in those municipal buildings. 
+The platform is now using Grafana to visualize these key metrics. Aside from reducing energy usage, an important goal of this initiative is to provide a comfortable and healthy workspace for the people in those municipal buildings. 
 
 Rodgers has been working on disaggregating the energy and operational data into multiple temperature zones within a single room. “We want to address not just efficiency; we are not trying to run at the bare minimum,” said Rodgers. “We want to make sure that we’re delivering the amount of oxygen people need, that the CO2 levels are regulated correctly. Ventilation is important.” The room temperatures, the airflow, the temperature of the air flow, the number of watts going into cooling each area of the room all need to be measured, and then delivered in a usable way.
 
