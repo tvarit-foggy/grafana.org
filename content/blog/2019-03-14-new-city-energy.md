@@ -2,20 +2,19 @@
 title = "How New City Energy Is Supporting Sustainability with Grafana"
 author = "jdam"
 date = "2019-03-14"
-keywords = ["Grafana", "Oracle Cloud Infrastructure", "GrafanaCon"]
+keywords = ["Grafana", "New City Energy", "GrafanaCon"]
 cover_opacity = "0.4"
 cover_blur = "1px"
 description = "Oracle Cloud Infrastructure now has a Grafana datasource"
 categories = ["Grafana", "GrafanaCon"]
-excerpt = "We are excited to announce the availability of the Oracle Cloud Infrastructure Data Source for Grafana."
-draft = true
+excerpt = "How Grafana is enabling Washington D.C. to reduce energy costs as well as its carbon footprint."
 +++
 
 <img src="/assets/img/blog/timeshift/andrew_rodgers.jpg" alt="Andrew Rodgers - New City Energy"/>
 <br />
 <small>Andrew Rodgers - New City Energy</small>
 
-Grafana isn’t just being used for monitoring applications. Andrew Rodgers, Senior Systems Architect at [New City Energy](http://www.newcityenergy.com/), spoke at GrafanaCon EU about how his organization is using Grafana to measure energy usage in municipal buildings in Washington D.C. for the [Department of General Services](https://www.dgs.ca.gov/) (DGS). 
+Grafana isn’t just being used for monitoring applications. Andrew Rodgers, Senior Systems Architect at [New City Energy](http://www.newcityenergy.com/), spoke in Amsterdam at GrafanaCon EU 2018 about how his organization is using Grafana to measure energy usage in municipal buildings in Washington D.C. for the [Department of General Services](https://www.dgs.ca.gov/) (DGS). 
 
 DGS manages infrastructure facilities for 28 million square feet of real estate in the District of Columbia. Of its half a billion dollars in operating costs of all these buildings, $100 million is spent on energy per year. 
 
@@ -57,8 +56,6 @@ The platform now monitors 46 buildings, pulling about 30,000 data points out of 
 
 “Our dashboards are not beautiful,” Rodgers admitted, “but I am really proud of these because I didn’t build them.” Staying true to the goal of giving every level of the organization access to the metrics, they use dashboards used by actual HVAC technicians. 
 
-Rodgers showed a number of them during his presentation. “Yes, there’s too much data up there, but the fact that I have nontechnical users using Grafana and doing the data discovery process is huge for me,” he said. “I think that’s where the value of these systems over the vendor-driven systems really shines in this particular segment. So this just allows a technician to pick a location or a building, then a type of equipment, and see all the data points associated with that. If someone’s calling about a particular room, they can dig in to the room level and see what’s going on in that room.”
-
 <div class="row">
 	<div class="col col--sm-6"><img src="/assets/img/blog/timeshift/new_city_dash1.jpg" /></div>
 	<div class="col col--sm-6"><img src="/assets/img/blog/timeshift/new_city_dash2.jpg" /></div>
@@ -67,6 +64,8 @@ Rodgers showed a number of them during his presentation. “Yes, there’s too m
 	<div class="col col--sm-6"><img src="/assets/img/blog/timeshift/new_city_dash3.jpg" /></div>
 	<div class="col col--sm-6"><img src="/assets/img/blog/timeshift/new_city_dash4.jpg" /></div>
 </div>
+
+Rodgers showed a number of them during his presentation. “Yes, there’s too much data up there, but the fact that I have nontechnical users using Grafana and doing the data discovery process is huge for me,” he said. “I think that’s where the value of these systems over the vendor-driven systems really shines in this particular segment. So this just allows a technician to pick a location or a building, then a type of equipment, and see all the data points associated with that. If someone’s calling about a particular room, they can dig in to the room level and see what’s going on in that room.”
 
 Pretty or not, this platform has saved the District of Columbia $4 million to date, Rodgers said. “We’re sitting at about a million dollars a year in annual recurring savings on the energy side, 20 percent reduction at the sites that we’ve really focused on,” he said. “And we’ve established the retro commissioning process that is using this data. We’re on track for this year to deliver an additional half million dollars a year in recurring savings.”
 
