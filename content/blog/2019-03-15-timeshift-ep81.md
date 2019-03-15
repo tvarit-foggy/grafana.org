@@ -52,9 +52,9 @@ See an article we missed? [Contact us](mailto:hello@grafana.com).
 <hr />
 
 #### From the Blogosphere
-[**The Linux Foundation Launches New CommunityBridge Platform to Help Sustain Open Source Communities**](https://www.linuxfoundation.org/press-release/2019/03/the-linux-foundation-launches-new-communitybridge-platform-to-help-sustain-open-source-communities/): The Linux Foundation recently announced CommunityBridge – a new platform created to empower open source developers and the individuals and organizations who support them, and Grafana Labs is thrilled to be part of the platform!
+[**The Linux Foundation Launches New CommunityBridge Platform to Help Sustain Open Source Communities**](https://www.linuxfoundation.org/press-release/2019/03/the-linux-foundation-launches-new-communitybridge-platform-to-help-sustain-open-source-communities/): The Linux Foundation recently announced CommunityBridge – a new platform created to empower open source developers and the individuals and organizations who support them – and Grafana Labs is thrilled to be part of the platform!
 
-[**Grafana | DigitalOcean Marketplace**](https://marketplace.digitalocean.com/apps/grafana): Grafana is one of the first 1-click Apps on the new Digital Ocean Marketplace.
+[**Grafana | DigitalOcean Marketplace**](https://marketplace.digitalocean.com/apps/grafana): Grafana is one of the first 1-click Apps on the new DigitalOcean Marketplace.
 
 [**Why You Should Be Using Grafana With OCI**](https://blogs.oracle.com/developers/why-you-should-be-using-grafana-with-oci): We recently announced the release of [Oracle Cloud Infrastructure as a Data Source for Grafana](https://grafana.com/blog/2019/02/25/oracle-cloud-infrastructure-as-a-data-source-for-grafana/). In a follow up post on the Oracle Blog, Todd Sharp describes the immediate benefits he realized when he created his first OCI dashboard in Grafana and why you should be using it.
 
