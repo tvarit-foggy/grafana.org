@@ -58,7 +58,7 @@ See an article we missed? [Contact us](mailto:hello@grafana.com).
 
 [**Why You Should Be Using Grafana With OCI**](https://blogs.oracle.com/developers/why-you-should-be-using-grafana-with-oci): We recently announced the release of [Oracle Cloud Infrastructure as a Data Source for Grafana](https://grafana.com/blog/2019/02/25/oracle-cloud-infrastructure-as-a-data-source-for-grafana/). In a follow up post on the Oracle Blog, Todd Sharp describes the immediate benefits he realized when he created his first OCI dashboard in Grafana and why you should be using it.
 
-[**How New City Energy Is Supporting Sustainability with Grafana)**](https://grafana.com/blog/2019/03/14/how-new-city-energy-is-supporting-sustainability-with-grafana/): In this talk from GrafanaCon EU 2018, Andrew Rodgers shows how Grafana is enabling Washington D.C. to reduce energy costs as well as its carbon footprint.
+[**How New City Energy Is Supporting Sustainability with Grafana**](https://grafana.com/blog/2019/03/14/how-new-city-energy-is-supporting-sustainability-with-grafana/): In this talk from GrafanaCon EU 2018, Andrew Rodgers shows how Grafana is enabling Washington D.C. to reduce energy costs as well as its carbon footprint.
 
 [**Remote monitoring and alerting for IoT**](https://cloud.google.com/solutions/remote-monitoring-and-alerting-for-iot): Learn how to set up remote monitoring and alerting for IoT devices using Google Cloud Platform, Prometheus, and Grafana.
 
