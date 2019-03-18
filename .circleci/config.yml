@@ -13,9 +13,16 @@ workflows:
     - deploy-staging:
         requires:
           - build
- #       filters:
- #         branches:
- #           only: master
+        filters:
+          branches:
+            only: master
+    - approve-production:
+        type: approval
+        requires:
+          - deploy-staging
+    - deploy-production:
+        requires:
+          - approve-production
 
 jobs:
   build:
@@ -60,6 +67,23 @@ jobs:
   deploy-staging:
     <<: *defaults
     steps:
+      - deploy:
+          env: staging
+
+  deploy-production:
+    <<: *defaults
+    steps:
+      - deploy:
+          env: staging
+
+commands:
+  deploy:
+    description: "Deploy"
+    parameters:
+      env:
+        type: string
+        default: staging
+    steps:
       - checkout
 
       - run:
@@ -81,4 +105,4 @@ jobs:
           name: Deploy to Staging
           command: |
             echo "$AWSCONFIG" | base64 -d >./awsconfig
-            ./publish.sh staging
+            ./publish.sh "<< parameters.env >>"
