@@ -1,0 +1,84 @@
+version: 2
+
+defaults: &defaults
+  docker:
+    - image: circleci/node:7.10
+  working_directory: ~/repo
+
+workflows:
+  version: 2
+  test-build-deploy:
+    jobs:
+    - build
+    - deploy-staging:
+        requires:
+          - build
+ #       filters:
+ #         branches:
+ #           only: master
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run:
+          name: Install Node etc
+          command: |
+            curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz | sudo tar -v -C /usr/local/bin -xz
+            sudo chmod 755 /usr/local/bin/hugo
+            /usr/local/bin/hugo version
+            npm install
+            sudo npm install -g bower grunt
+            bower install
+
+      - run:
+          name: Build
+          command: |
+            grunt
+            tar czf dist.tgz dist
+
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - dist/*
+
+      - store_artifacts:
+          path: dist.tgz
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+  deploy-staging:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo sudo apt-get -y -qq install awscli
+
+      - run:
+          name: Install Node etc
+          command: |
+            curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz | sudo tar -v -C /usr/local/bin -xz
+            sudo chmod 755 /usr/local/bin/hugo
+            /usr/local/bin/hugo version
+            npm install
+            sudo npm install -g bower grunt
+            bower install
+
+      - run:
+          name: Deploy to Staging
+          command: |
+            echo "$AWSCONFIG" | base64 -d >./awsconfig
+            ./publish.sh staging
