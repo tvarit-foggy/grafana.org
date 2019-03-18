@@ -1,7 +1,9 @@
-# grafana.com/blog
+# Blog (grafana.com/blog) and documentation assets
 
 This repo hosts the blog for the grafana.com website.
 It's a static page generator based on Hugo.
+
+It also hosts all images for the documentation, as well as the Dockerfile for the build image needed to deploy docs (this is not needed for blog publishing).
 
 ## Small edits
 
@@ -20,12 +22,25 @@ You should have to do this only once.
 
 - Install Hugo, the static site generator
 
-```bash
-curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz \
-	| sudo tar -v -C /usr/local/bin -xz \
-  && sudo chmod 755 /usr/local/bin/hugo \
-  && /usr/local/bin/hugo version
-```
+  (Note: The exact version 0.30.2 is needed only for the person doing the publishing, since recent versions break version switching of the docs site. If you plan to write blog posts only, then a recent version of hugo is fine, and may be installed via `brew install hugo`, allowing you to skip the manual install below.)
+
+  Linux:
+
+  ```bash
+  curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz \
+  \
+    && sudo chmod 755 /usr/local/bin/hugo \
+    && /usr/local/bin/hugo version
+  ```
+
+  Mac:
+
+  ```bash
+  curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_macOS-64bit.tar.gz \
+  \
+    && sudo chmod 755 /usr/local/bin/hugo \
+    && /usr/local/bin/hugo version
+  ```
 
 - Install nodejs, version 6 and above is fine, check with `node -v`
 
@@ -35,8 +50,6 @@ curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2
 npm install -g bower
 npm install -g grunt
 ```
-
-> TODO is exactly 0.30.2 of Hugo needed?
 
 ### Build
 
@@ -90,26 +103,41 @@ Daniel, Torkel, Anthony, Dan, Trent
 
 ## Admin
 
-### To build the Docker image for docs:
+### To publish the blog
 
-make docs-build
-
-### To publish
+You'll need a awsconfig as well. Ask and you should find.
 
 ```bash
 sudo pip install awscli
 ```
 
-You'll need a awsconfig as well. Ask and you should find.
+**Deployment**
 
-### To staging
+Deploy the current blog to staging. Needs hugo version `0.30.2`.
 
 ```bash
 ./publish.sh
 ```
 
-### To production
+Verify the blog on the staging website: https://staging.grafana.com/blog/
+
+If everything is in order, publish to production:
 
 ```bash
 ./publish.sh prod
 ```
+
+Verify the blog in production: https://grafana.com/blog/
+
+### To build the Docker image for docs:
+
+This repo includes the Dockerfile and assets to build the grafana docs.
+It will include the assets from this repo and then combine them with the docs from the grafana repo.
+
+Build the Docker image used to deploy docs:
+
+```bash
+make docs-build
+```
+
+Then continue in the grafana repo.
