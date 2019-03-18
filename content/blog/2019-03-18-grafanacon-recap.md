@@ -3,6 +3,7 @@ title = "GrafanaCon L.A. Recap: Grafana 6.0, LGTM, and More!"
 author = "jdam"
 date = "2019-03-18"
 keywords = ["Grafana", "GrafanaCon", "Kubernetes", "Prometheus", "Graphite"]
+cover_image = "/assets/img/blog/timeshift/grafanacon_recap_blog_hero.jpg"
 cover_opacity = "0.4"
 cover_blur = "1px"
 description = "The rest of the city may still have been in a post-Oscars haze, but nearly 300 monitoring mavens gathered in downtown L.A. bright and early on Feb. 25 to kick off GrafanaCon 2019."
@@ -10,7 +11,7 @@ categories = ["Grafana", "GrafanaCon"]
 excerpt = "The rest of the city may still have been in a post-Oscars haze, but nearly 300 monitoring mavens gathered in downtown L.A. bright and early on Feb. 25 to kick off GrafanaCon 2019."
 +++
 
-The rest of the city may still have been in a post-Oscars haze, but nearly 300 monitoring mavens gathered in downtown L.A. bright and early on Feb. 25 to kick off GrafanaCon 2019. The next two days were filled with 40+ talks, including Grafana end user stories from companies like [Bloomberg](https://www.youtube.com/watch?v=9wrI2iwbP94) and [Tinder](https://www.youtube.com/watch?v=BdgT4cTjpjQ). The second day’s schedule allowed attendees to choose from multiple deeper-dive tracks such as cloud native observability, real-time analytics in IoT, and Grafana itself (getting the most out of it and extending it).
+The rest of the city may still have been in a post-Oscars haze, but over 350 monitoring mavens gathered in downtown L.A. bright and early on Feb. 25 to kick off GrafanaCon 2019. The next two days were filled with 40+ talks, including Grafana end user stories from companies like [Bloomberg](https://www.youtube.com/watch?v=9wrI2iwbP94) and [Tinder](https://www.youtube.com/watch?v=BdgT4cTjpjQ). The second day’s schedule allowed attendees to choose from multiple deeper-dive tracks such as cloud native observability, real-time analytics in IoT, and Grafana itself (getting the most out of it and extending it).
 
 Here are some highlights and takeaways from the conference:
 
