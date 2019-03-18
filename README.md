@@ -29,10 +29,11 @@ curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2
 
 - Install nodejs, version 6 and above is fine, check with `node -v`
 
-- Install bower, the dependency manager
+- Install bower, the dependency manager and grunt, the task runner
 
 ```bash
 npm install -g bower
+npm install -g grunt
 ```
 
 > TODO is exactly 0.30.2 of Hugo needed?
