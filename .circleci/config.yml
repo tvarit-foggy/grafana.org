@@ -67,22 +67,22 @@ jobs:
   deploy-staging:
     <<: *defaults
     steps:
-      - deploy:
+      - deploy_site:
           env: staging
 
   deploy-production:
     <<: *defaults
     steps:
-      - deploy:
+      - deploy_site:
           env: staging
 
 commands:
-  deploy:
+  deploy_site:
     description: "Deploy"
     parameters:
       env:
         type: string
-        default: staging
+        default: prod
     steps:
       - checkout
 
