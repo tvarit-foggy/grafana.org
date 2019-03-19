@@ -74,7 +74,7 @@ jobs:
     <<: *defaults
     steps:
       - deploy_site:
-          env: staging
+          env: prod
 
 commands:
   deploy_site:
