@@ -1,7 +1,7 @@
 +++
 title = "GrafanaCon L.A. Recap: Grafana 6.0, LGTM, and More!"
 author = "jdam"
-date = "2019-03-18"
+date = "2019-03-19"
 keywords = ["Grafana", "GrafanaCon", "Kubernetes", "Prometheus", "Graphite"]
 cover_image = "/assets/img/blog/timeshift/grafanacon_recap_blog_hero.jpg"
 cover_opacity = "0.4"
