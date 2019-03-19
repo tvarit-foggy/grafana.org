@@ -98,36 +98,11 @@ You should be able to see the blog site loading fine in the browser.
 
 ### Publishing
 
-Find someone who can publish the blog:
-Daniel, Torkel, Anthony, Dan, Trent
+Merges into the master branch are automaitcally deployed to https://staging.grafana.com/blog/.
+
+To deploy master to https://grafana.com/blog/, find the latest master workflow on https://circleci.com/gh/grafana/workflows/grafana.org/tree/master and click "approve-production".
 
 ## Admin
-
-### To publish the blog
-
-You'll need a awsconfig as well. Ask and you should find.
-
-```bash
-sudo pip install awscli
-```
-
-**Deployment**
-
-Deploy the current blog to staging. Needs hugo version `0.30.2`.
-
-```bash
-./publish.sh
-```
-
-Verify the blog on the staging website: https://staging.grafana.com/blog/
-
-If everything is in order, publish to production:
-
-```bash
-./publish.sh prod
-```
-
-Verify the blog in production: https://grafana.com/blog/
 
 ### To build the Docker image for docs:
 
