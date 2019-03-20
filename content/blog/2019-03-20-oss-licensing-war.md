@@ -29,7 +29,7 @@ A few months ago, IBM announced that it would purchase Red Hat for $36B, bringin
 
 The most sophisticated companies wanted their most mission critical software open. Red Hat rode that first wave, and had built either a great or a pathetic business—people couldn’t seem to decide—by capturing a relatively small part of that value.
 
-As Grafana Labs became a company in 2015, I keenly watched a new wave of commercial open source companies like Elastic BV (creators of Elasticsearch), and MongoDB Inc. (creators of MongoDB) grow their communities and their companies. There are many more such companies on the horizon. My friend Joseph Jacks (one of the most un-VC-like VCs in the business) is [tracking over 40 such commercial open source companies with annual revenue worth >$100M](https://docs.google.com/spreadsheets/d/17nKMpi_Dh5slCqzLSFBoWMxNvWiwt2R-t4e_l7LPLhU/edit#gid=0). Open source, and the infrastructure software space in general, is a much bigger market than many of us thought it would be.
+As Grafana Labs became a company in 2015, I keenly watched a new wave of commercial open source companies like Elastic NV (creators of Elasticsearch), and MongoDB Inc. (creators of MongoDB) grow their communities and their companies. There are many more such companies on the horizon. My friend Joseph Jacks (one of the most un-VC-like VCs in the business) is [tracking over 40 such commercial open source companies with annual revenue worth >$100M](https://docs.google.com/spreadsheets/d/17nKMpi_Dh5slCqzLSFBoWMxNvWiwt2R-t4e_l7LPLhU/edit#gid=0). Open source, and the infrastructure software space in general, is a much bigger market than many of us thought it would be.
 
 **Software Becomes A Service**
 
@@ -47,7 +47,7 @@ This sets the stage for our conflict.
 
 **AWS: Friend or Foe?**
 
-The actual “thing” that AWS is ultimately selling is computer capacity. AWS wants to commoditize the complement of what uses this capacity: software. Since open source software is starting to become the most coveted infrastructure software, it’s the ideal software for AWS to try and commoditize, and sell as a service to its customers.
+The actual “thing” that AWS is ultimately selling is computer capacity. AWS wants to [commoditize the complement](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/) of what uses this capacity: software. Since open source software is starting to become the most coveted infrastructure software, it’s the ideal software for AWS to try and commoditize, and sell as a service to its customers.
 
 Due to the freedoms that open source provides, it’s also the easiest.
 
