@@ -41,19 +41,17 @@ Software as a Service (SaaS), and the cloud in general, would reshape the entire
 
 AWS in particular deserves special attention. It is the apex predator of the public clouds. The reason why Amazon is the most valuable company in the world is because of AWS, not the e-commerce side project that it runs. If AWS were a company, it’d be worth more than all the companies on Joseph’s list combined. AWS dominates its competition.
 
-Open source may be winning infrastructure software, but the public cloud, and AWS in particular, is winning where that software is run and how it is consumed by customers.
+Open source may be winning infrastructure software, but the public cloud, and AWS specifically, is winning where that software is run and how it is consumed by customers.
 
 This sets the stage for our conflict.
 
 **AWS: Friend or Foe?**
 
-The actual “thing” that AWS is ultimately selling is computer capacity. AWS wants to [commoditize the complement](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/) of what uses this capacity: software. Since open source software is starting to become the most coveted infrastructure software, it’s the ideal software for AWS to try and commoditize, and sell as a service to its customers.
+The actual “thing” that AWS is ultimately sells is computer capacity. AWS wants to [commoditize the complement](https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/) of what uses this capacity: software. Since open source software is starting to become the most coveted infrastructure software, it’s the ideal software for AWS to try and commoditize, and sell as a service to its customers.
 
-Due to the freedoms that open source provides, it’s also the easiest.
+Due to the freedoms that open source provides, it’s also the easiest to just "take".
 
-I suspect AWS finds this extremely convenient. The cornerstone, original AWS service that it launched with in 2006 was Linux itself (EC2), rented by the minute.
-
-AWS can take the most popular open source software and provide it to all its customers, without even asking let alone paying the creators of that software. It’s like taking candy from a baby.
+I suspect AWS finds this extremely convenient. The cornerstone, original AWS service that it launched with in 2006 was Linux itself (EC2), rented by the minute. AWS continiues to take the most popular open source software, to sell as a service, without even asking let alone paying the creators of that software. It’s like taking candy from a baby.
 
 Except in the case of software like Elasticsearch and MongoDB, the baby is a multi-billion-dollar open source company that is very concerned about meeting its sales targets. And the candy was paid for by the VCs.
 
@@ -69,6 +67,8 @@ Unlike Red Hat, most of the new-generation commercial open source companies were
 
 Such an “open core” strategy, where a company like Elastic NV maintains an open source project (like Elasticsearch) but also provides additional enhancements as commercial software (like X-Pack), would be widely adopted by many of the companies on Joseph’s list.  This commercial software would only be available to paying customers. Thus even customers who used the open source Elasticsearch software via the AWS offering would still have plenty of reasons to deal with — and pay — Elastic NV directly.
 
-Elastic NV also enhanced its own Elastic as a service cloud offering. The company innovated to improve both its open source core and its commercial add-ons. It got better at being able to deliver software as a service. It competed.
+Elastic NV also enhanced its own Elastic as a service cloud offering. The company innovated to improve both its open source core and its commercial add-ons. It got better at being able to deliver software as a service. It competed. The company went public in October 2018, and is currently valued at more than $6B. Not bad for an open source project that Elasticsearch B.V. CEO Shay Bannon started in 2010. 
 
-Coming soon: Part 2. The licensing war escalates. Where do we go from here?
+But the war would be far from over. Both AWS and Elastic NV would escalate hostilities over the coming months.
+
+Coming soon: Part 2 - The licensing war escalates.
