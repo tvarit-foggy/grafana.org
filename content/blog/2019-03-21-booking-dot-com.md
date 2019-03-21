@@ -3,8 +3,8 @@ title = "Pro Tips: How Booking.com Handles Millions of Metrics Per Second with G
 author = "jdam"
 date = "2019-03-21"
 keywords = ["Grafana", "GrafanaCon", "Graphite"]
-cover_image = "/assets/img/blog/timeshift/grafanacon_recap_blog_hero.jpg"
-cover_opacity = "0.4"
+cover_image = "/assets/img/blog/vlad_booking.jpg"
+cover_opacity = "0.35"
 cover_blur = "1px"
 description = "At GrafanaCon EU 2018, Booking.com System Administrator Vladimir Smirnov gave a talk about why the company started to use Graphite almost five years ago, and how he and his team scaled it to handle millions of metrics per second."
 categories = ["Grafana", "Graphite"]
@@ -13,7 +13,16 @@ excerpt = "At GrafanaCon EU 2018, Booking.com System Administrator Vladimir Smir
 
 More than 1.55 million room nights are reserved on the [Booking.com](https://www.booking.com/) platform every day. It’s a staggering amount of traffic, and not surprisingly, the Amsterdam-based travel e-commerce company has a lot of knowledge to share about handling metrics at scale.
 
+
 At GrafanaCon EU 2018, Booking.com System Administrator Vladimir Smirnov gave a [talk](https://www.youtube.com/watch?v=RzO2tmrPRfo) about why the company started to use [Graphite](https://graphiteapp.org/) almost five years ago, and how he and his team scaled it to handle millions of metrics per second. “According to the graphiteapp.org, Graphite does three things really well: It kicks ass, chews bubblegum,” he quipped, “and it makes it easy to store and graph metrics.” The ease of use, via an HTTP API, and its modularity were big draws for Booking.com.
+
+<div class="row row--internal-gutters row--extra-bottom">
+	<div class="col col--sm-12">
+		<img src="/assets/img/blog/vlad_booking1.jpg" alt="Vladimir Smirnov"/>
+		<br />
+		<small>Vladimir Smirnov from GrafanaCo EU 2018</small>
+	</div>
+</div>
 
 The most common use cases for Graphite within the organization were capacity planning and troubleshooting. “For capacity planning, we really need to store data for quite some time, ideally forever,” he said. “Also, we wanted to use it as source of data for troubleshooting and postmortems. We decided to store and visualize the business metrics, so whatever developers think is needed about the application, they also send it there.”
 
@@ -85,4 +94,9 @@ To sum up: “Every frontend has exactly three pieces of software - [Grafana](ht
 
 Smirnov, who has now left Booking.com, maintains the original [Carbon API project](https://github.com/go-graphite/carbonapi) that he started working on when he was there. Booking’s current stack can be found at its [github account](https://github.com/bookingcom). For more details, check out the [slides](https://www.grafanacon.org/2018/presentations/Vladimir_Smirnov_GrafanaCon_EU_2018.pdf) from his presentation.
 
-Missed the conference? [You can watch the talks here](https://www.grafanacon.org/2019/videos).
+#### Video: How Booking.com Handles Millions of Metrics Per Second with Graphite
+<div class="video-wrapper">
+	<iframe src="https://www.youtube.com/embed/RzO2tmrPRfo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<br />
+#### Missed the conference? [You can watch the talks here](https://www.grafanacon.org/2019/videos).
