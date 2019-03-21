@@ -8,7 +8,7 @@ cover_opacity = "0.4"
 cover_blur = "1px"
 description = "At GrafanaCon EU 2018, Booking.com System Administrator Vladimir Smirnov gave a talk about why the company started to use Graphite almost five years ago, and how he and his team scaled it to handle millions of metrics per second."
 categories = ["Grafana", "Graphite"]
-excerpt = "At GrafanaCon EU 2018, Booking.com System Administrator Vladimir Smirnov gave a talk about why the company started to use Graphite almost five years ago, and how he and his team scaled it to handle millions of metrics per second.."
+excerpt = "At GrafanaCon EU 2018, Booking.com System Administrator Vladimir Smirnov gave a talk about why the company started to use Graphite almost five years ago, and how he and his team scaled it to handle millions of metrics per second."
 +++
 
 More than 1.55 million room nights are reserved on the [Booking.com](https://www.booking.com/) platform every day. It’s a staggering amount of traffic, and not surprisingly, the Amsterdam-based travel e-commerce company has a lot of knowledge to share about handling metrics at scale.
@@ -35,7 +35,7 @@ Using [the Graphite line protocol](https://graphite.readthedocs.io/en/latest/fee
 
 But the company’s Graphite journey didn’t end there. “The more metrics we got, the more strange stuff we started to notice,” Smirnov said. “First of all, we saw that the metric distribution was not quite good with the bulk stream consistent hashing algorithm. In the worst cases, the difference was about 20%, so basically when one server ran out of disk space or ran out of capacity, other servers were fine.”
 
-The team found a white paper from Google about the jump hashing algorithm, and implemented it in the relay to achieve an almost even distribution. The difference with the new algorithm was less than 1%.
+The team found [a white paper from Google about the jump hashing algorithm](https://arxiv.org/pdf/1406.2294.pdf), and implemented it in the relay to achieve an almost even distribution. The difference with the new algorithm was less than 1%.
 
 More recently, they realized that this implementation wasn’t easy to maintain, so they started to [rewrite the relay in Go](https://github.com/go-graphite/gorelka). They also tried to switch from the traditional plaintext carbon protocol input and output to start using Kafka.
 
@@ -72,7 +72,7 @@ To find a solution, the team began collecting all possible stats about the backe
 **What’s Next**
 
 The team has a substantial to-do list to keep improving Booking.com’s Graphite stack.
-1. Find a replacement for whisper because it doesn’t have any compression. “It’s 12 bytes per point, so it takes really a lot of disk space, and most of our vacants are actually disk space bounded, not CPU or memory or network bound.”
+1. Find a replacement for whisper because it doesn’t have any compression. “It’s 12 bytes per point, so it takes really a lot of disk space, and most of our vacants are actually disk space bounded, not CPU, memory or network bound.”
 2. Replace the Graphite line protocol between the components. “We are looking forward to migrating to streaming gRPC, but in terms of ingestion it’s still line protocol across all the stack. After the first step you don’t really need it. You can use something that’s compressed and even binary not to spend the CPU time on the backends.”
 3. Make the flame graphs more or less production ready for other use cases, perhaps even having something like differential flame graphs.
 4. Start collecting the stack traces from the Graphite stack in production to get some insights about what’s happening under the hood when we face problems.
@@ -83,6 +83,6 @@ While the team considers the Graphite stack still a work in progress, Smirnov ca
 
 To sum up: “Every frontend has exactly three pieces of software - [Grafana](https://github.com/grafana/grafana), [Carbon API](https://github.com/bookingcom/carbonapi), and Carbon Zipper (which is included in Carbon API)—and whenever the frontend has a problem, we just deploy a new server that contains these three pieces,” said Smirnov. “For the backend side, it’s always [Go Carbon](https://github.com/lomik/go-carbon) with carbonserver enabled inside. It’s always a single process, and whenever we run out of disk space or like in rare cases when we hit the limits in terms of capacity, like amount of metrics per second we can receive from the storage side, we deploy a bunch of new servers and do the rebalancing with [buckytools](http://github.com/go-graphite/buckytools).”
 
-Smirnov, who has left Booking.com, maintains the original [Carbon API project](https://github.com/go-graphite/carbonapi) that he started working on when he was there. Booking’s current stack can be found at its [github account](https://github.com/bookingcom). For more details, check out the [slides](https://www.grafanacon.org/2018/presentations/Vladimir_Smirnov_GrafanaCon_EU_2018.pdf) from his presentation.
+Smirnov, who has now left Booking.com, maintains the original [Carbon API project](https://github.com/go-graphite/carbonapi) that he started working on when he was there. Booking’s current stack can be found at its [github account](https://github.com/bookingcom). For more details, check out the [slides](https://www.grafanacon.org/2018/presentations/Vladimir_Smirnov_GrafanaCon_EU_2018.pdf) from his presentation.
 
 Missed the conference? [You can watch the talks here](https://www.grafanacon.org/2019/videos).
