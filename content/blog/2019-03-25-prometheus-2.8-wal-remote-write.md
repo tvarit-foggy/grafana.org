@@ -27,7 +27,7 @@ Another key enhancement we made involves cases with a single batch of data: If t
 
 **Corner cases**
 
-Initially, this was pitched as a two- to four-week project. But what happened along the way was that there were a lot of little edge cases that came up. The new approach broke assumptions in the existing code around locking, parallelisation and concurrency that needed addressing.
+Initially, this was pitched as a two- to four-week project. But what happened along the way was that there were a lot of little edge cases that came up. The new approach broke assumptions in the existing code around locking, parallelization and concurrency that needed addressing.
 
 For example, the existing code within Prometheus assumed that all write-ahead log files were fully written. So one of the major things we had to do was write code for the new remote write to read the write-ahead log files as they were being written.
 
