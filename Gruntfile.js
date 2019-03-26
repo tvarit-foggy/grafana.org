@@ -231,7 +231,7 @@ module.exports = function(grunt) {
 
     hugo = require("child_process").spawn("hugo", args, {stdio: "inherit"});
     hugo.on("exit", function() { done(true); });
-    hugo.on("error", function() { done(true); });
+    hugo.on("error", function() { done(false); });
   });
 
   grunt.registerTask('systemjs', function() {
