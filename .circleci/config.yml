@@ -1,0 +1,95 @@
+version: 2.1
+
+defaults: &defaults
+  docker:
+    - image: tomwilkie/grafana-org-build:master-161ecda2
+  working_directory: ~/repo
+
+workflows:
+  version: 2
+  test-build-deploy:
+    jobs:
+    - build
+    - deploy-staging:
+        requires:
+          - build
+        filters:
+          branches:
+            only: master
+    - approve-production:
+        type: approval
+        requires:
+          - deploy-staging
+    - deploy-production:
+        requires:
+          - approve-production
+
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run:
+          name: Install dependancies
+          command: |
+            npm install
+            bower install
+
+      - run:
+          name: Build
+          command: |
+            grunt
+            tar czf dist.tgz dist
+
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - dist/*
+
+      - store_artifacts:
+          path: dist.tgz
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+  deploy-staging:
+    <<: *defaults
+    steps:
+      - deploy_site:
+          env: staging
+
+  deploy-production:
+    <<: *defaults
+    steps:
+      - deploy_site:
+          env: prod
+
+commands:
+  deploy_site:
+    description: "Deploy"
+    parameters:
+      env:
+        type: string
+        default: prod
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependancies
+          command: |
+            npm install
+            bower install
+
+      - run:
+          name: Deploy to Staging
+          command: |
+            echo "$AWSCONFIG" | base64 -d >./awsconfig
+            ./publish.sh "<< parameters.env >>"

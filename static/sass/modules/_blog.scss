@@ -148,6 +148,8 @@ q.quote {
 
 .blog-share-buttons {
   height: 27px;
+  display: flex;
+
   iframe {
     margin-right: $spacer;
   }
@@ -225,7 +227,7 @@ line-height: 1.3;
 .grafanacon-header {
   &--mobile {
     display: none;
-    
+
     @include until(small) {
       display: block;
       max-width: 350px;
@@ -235,7 +237,7 @@ line-height: 1.3;
 
   &--desktop {
     display: none;
-    
+
     @include at-least(small) {
       display: block;
       margin-bottom: 20px;
