@@ -207,11 +207,11 @@ module.exports = function(grunt) {
         buildDrafts = true;
         break;
       case 'staging':
-        baseUrl = 'https://staging.grafana.com/blog';
+        baseUrl = 'http://staging-blog.grafana.com.s3-website-us-west-2.amazonaws.com';
         buildDrafts = true;
         break;
       case 'prod':
-        baseUrl = 'https://grafana.com/blog';
+        baseUrl = 'http://blog.grafana.com.s3-website-us-west-2.amazonaws.com';
         break;
       case 'staging-docs':
         buildDrafts = true;
