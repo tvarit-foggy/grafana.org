@@ -2,7 +2,7 @@ version: 2.1
 
 defaults: &defaults
   docker:
-    - image: circleci/node:7.10
+    - image: tomwilkie/grafana-org-build:master-161ecda2
   working_directory: ~/repo
 
 workflows:
@@ -36,13 +36,9 @@ jobs:
             - v1-dependencies-
 
       - run:
-          name: Install Node etc
+          name: Install dependancies
           command: |
-            curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz | sudo tar -v -C /usr/local/bin -xz
-            sudo chmod 755 /usr/local/bin/hugo
-            /usr/local/bin/hugo version
             npm install
-            sudo npm install -g bower grunt
             bower install
 
       - run:
@@ -87,18 +83,9 @@ commands:
       - checkout
 
       - run:
-          name: Install AWS CLI
+          name: Install dependancies
           command: |
-            sudo sudo apt-get -y -qq install awscli
-
-      - run:
-          name: Install Node etc
-          command: |
-            curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.tar.gz | sudo tar -v -C /usr/local/bin -xz
-            sudo chmod 755 /usr/local/bin/hugo
-            /usr/local/bin/hugo version
             npm install
-            sudo npm install -g bower grunt
             bower install
 
       - run:
