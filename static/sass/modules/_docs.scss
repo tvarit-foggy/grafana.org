@@ -90,7 +90,7 @@ $card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
 
      &:hover {
        background: $card-background;
-       color: $white;
+       color: #fc0334;
      }
 
      &:hover,
@@ -374,7 +374,7 @@ $card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
     }
 
     h5, p {
-      color: #fc0334c7;
+      color: #fc0334ba;
     }
   }
 

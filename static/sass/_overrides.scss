@@ -58,7 +58,7 @@ code {
 
 pre,
 pre[class*="language-"] {
-  background-color: $darker-gray2;
+  background-color: #e9edf2;
   margin-bottom: 1rem;
   border-radius: 4px;
   padding: 0.8rem;
@@ -68,7 +68,7 @@ pre[class*="language-"] {
   white-space: pre-wrap;
 
   code {
-    padding: 0;
+    padding: 0; 
     border: none;
     background-color: transparent;
     color: $text-color;
