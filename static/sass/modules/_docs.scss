@@ -103,7 +103,7 @@ $card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
 
    a.expand-menu {
      &:hover {
-       background: $darker-gray;
+       background: $card-background;
      }
 
      &.active {
@@ -361,7 +361,7 @@ $card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
   h4 {
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: #525252;
   }
 
   img {
@@ -370,11 +370,11 @@ $card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
 
   &:hover {
     h4  {
-      color: #414141;
+      color: #fc0334;
     }
 
     h5, p {
-      color: $off-white2;
+      color: #fc0334c7;
     }
   }
 
