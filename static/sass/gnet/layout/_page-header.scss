@@ -5,7 +5,7 @@
 .page-header {
   height: $page-header-height-small;
   background: $page-header-bg;
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 20px fdfdfd;
   position: relative;
 
   &:after {
@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 100px 100px 260px -70px black;
+    box-shadow: inset 100px 100px 260px -70px #fdfdfd;
     z-index: -10;
   }
 

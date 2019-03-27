@@ -1,8 +1,14 @@
 @import "algolia";
 
+$gray-5: #dde4ed;
+$gray-6: #e9edf2;
+
 $docs-aside-menu-width: 17rem;
 $docs-toc-aside-width: 16rem;
 $docs-subheader-bg-color: transparent;
+
+$card-background: linear-gradient(135deg, $gray-6, $gray-5);
+$card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
 
 // override margin
 .page-submenu {
@@ -83,7 +89,7 @@ $docs-subheader-bg-color: transparent;
      color: $off-white;
 
      &:hover {
-       background: $darker-gray;
+       background: $card-background;
        color: $white;
      }
 
@@ -107,7 +113,7 @@ $docs-subheader-bg-color: transparent;
 
  .nav-sub .current-page,
  .nav-sub .current-page:hover {
-   color: $white;
+   color: $link-color;
    border-left-width: 5px;
  }
 
@@ -197,7 +203,7 @@ $docs-subheader-bg-color: transparent;
 
 .docs-toc-heading {
   background-color: $docs-subheader-bg-color;
-  color: white;
+  color: rgb(128, 128, 128);
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: $spacer/2;
@@ -256,7 +262,7 @@ $docs-subheader-bg-color: transparent;
   top: 40px;
   right: 30px;
   background: $dark-gray;
-  box-shadow: 0 0 20px $black;
+  box-shadow: 0 0 20px white;
   list-style: none;
   background: linear-gradient(135deg, $dark-gray, $darker-gray2);
   border: 1px solid black;
@@ -282,7 +288,7 @@ $docs-subheader-bg-color: transparent;
   height: 50px;
   text-align: center;
   padding: rem-calc(20);
-  box-shadow: 0px -5px 15px 0px $black;
+  box-shadow: 0px -5px 15px 0px white;
   padding: rem-calc(5 10 10 10);
   color: $off-white2;
   position: relative;
@@ -349,13 +355,13 @@ $docs-subheader-bg-color: transparent;
     width: 100%;
     text-align: center;
     margin: 0;
-    color: $lighter-gray;
+    color: #707070;
   }
 
   h4 {
     width: 100%;
     text-align: center;
-    color: #f46800;
+    color: #fff;
   }
 
   img {
@@ -364,7 +370,7 @@ $docs-subheader-bg-color: transparent;
 
   &:hover {
     h4  {
-      color: $link-color-hover;
+      color: #414141;
     }
 
     h5, p {

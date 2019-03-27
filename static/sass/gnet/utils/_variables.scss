@@ -7,28 +7,32 @@ $border-radius: 2px;
 // Colors
 // --------------------------------------------------------------------------
 
-$primary-color: #f46800;
+$primary-color: #fff;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffed00;
 $alert-color: #ea2531;
-$lighter-gray: #B8B8B8;
+$lighter-gray: #413f3f;
 $light-gray: #a2a2a2;
 $medium-gray: #898989;
 $gray: #555;
-$dark-gray: #262626;
+$gray2: #5e5c5c;
+$dark-gray: #fff;
+$dark-gray3: #2e2a2a;
+$white1: #fff;
 $darker-gray: #1f1f1f;
 $darker-gray2: #161616;
 $black: #0a0a0a;
 $white: #fefefe;
-$off-white: #c5c5c5;
-$off-white2: #eaeaea;
+$off-white: #585858;
+$off-white2: #525252;
 $dark-orange: #e94d00;
-$blue: #13b2d4;
+$blue: #ed1b4a;
 $dark-blue: darken($blue,10%);
 $amethyst: #d077e8;
 $monza: #d6041b;
-$alert-online:  #10a345;
+$alert-online: #10a345;
+$linkcolor: #ed1b4a;
 
 $color-page-hero-bg: #2e2e2e;
 
@@ -128,8 +132,8 @@ $hr-margin: rem-calc(20);
 // Links
 //
 
-$link-color:        $primary-color;
-$link-color-hover:  lighten($primary-color, 10%);
+$link-color:        $linkcolor;
+$link-color-hover:  lighten($linkcolor, 10%);
 
 //
 // Buttons
@@ -159,7 +163,7 @@ $font-size-h6: 1rem;
 // Page Header
 //
 
-$page-header-bg: $dark-gray-gradient;
+$page-header-bg: $white1;
 $page-header-height-small: rem-calc(75);
 $page-header-height-large: rem-calc(92);
 
@@ -184,5 +188,5 @@ $page-section-with-bg-pattern-shadow: 0px 0px 20px #111;
 // Cards
 //
 
-$card-background: linear-gradient(135deg, darken($gray, 15%) 0%, $dark-gray 100%);
+$card-background: linear-gradient(135deg, darken($gray2, 15%) 0%, $dark-gray3 100%);
 $card-shadow: -1px -1px 0px 0px rgba(255,255,255,0.1), 1px 1px 0px 0px rgba(0,0,0, 0.3);

@@ -1,7 +1,7 @@
 </div>
 
-{{ $.Scratch.Set "navBaseUrl" "https://grafana.com" }}
-{{ $.Scratch.Set "docsUrl" "http://docs.grafana.org" }}
+{{ $.Scratch.Set "navBaseUrl" "https://tvarit.com" }}
+{{ $.Scratch.Set "docsUrl" "http://tvarit.com/docs" }}
 {{ $baseUrl := (printf "%v" $.Site.BaseURL) }}
 
 {{ if hasPrefix $baseUrl "http://localhost" }}
@@ -17,108 +17,9 @@
 {{ $navBaseUrl := .Scratch.Get "navBaseUrl" }}
 {{ $docsUrl := .Scratch.Get "docsUrl" }}
 
-<div class="page-footer wrapper" data-reactid="166">
-   <div class="page-footer__nav" data-reactid="167">
-      <div class="page-footer__col page-footer__col--left" data-reactid="168">
-         <nav class="site-nav" data-reactid="169">
-            <ul class="ui-list" data-reactid="170">
-               <li class="site-nav__item site-nav__item--heading" data-reactid="171">
-                  <h4 data-reactid="172">Grafana</h4>
-               </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="173">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/grafana" data-reactid="174">Features</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="175">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/grafana/testimonials" data-reactid="176">Testimonials</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="177">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/grafana/contribute" data-reactid="178">Contribute</a>
-							 </li>
-            </ul>
-         </nav>
-         <nav class="site-nav" data-reactid="179">
-            <ul class="ui-list" data-reactid="180">
-               <li class="site-nav__item site-nav__item--heading" data-reactid="181">
-                  <h4 data-reactid="182">Services</h4>
-               </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="183">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/services/support" data-reactid="184">Enterprise Support</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="185">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/services/training" data-reactid="186">Training</a>
-							 </li>
-            </ul>
-         </nav>
-         <nav class="site-nav" data-reactid="187">
-            <ul class="ui-list" data-reactid="188">
-               <li class="site-nav__item site-nav__item--heading" data-reactid="189">
-                  <h4 data-reactid="190">Plugins</h4>
-               </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="191">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/plugins?type=panel" data-reactid="192">Panels</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="193">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/plugins?type=datasource" data-reactid="194">Data Sources</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="195">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/plugins?type=app" data-reactid="196">Apps</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="197">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/dashboards" data-reactid="198">Dashboards</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="199">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/dashboards" data-reactid="200">Collectors</a>
-							 </li>
-            </ul>
-         </nav>
-				 <nav class="site-nav" data-reactid="187">
-            <ul class="ui-list" data-reactid="188">
-               <li class="site-nav__item site-nav__item--heading" data-reactid="189">
-                  <h4 data-reactid="190">Community</h4>
-               </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="191">
-								 <a class="site-nav__link site-nav__link--discrete" href="https://community.grafana.com" data-reactid="192">Community</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="193">
-								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/events" data-reactid="194">Events</a>
-							 </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="195">
-								 <a class="site-nav__link site-nav__link--discrete" href="http://grafanacon.org" data-reactid="196">GrafanaCon</a>
-							 </li>
-            </ul>
-         </nav>
-      </div>
-      <div class="page-footer__col page-footer__col--right" data-reactid="201">
-         <nav class="site-nav" data-reactid="202">
-            <ul class="ui-list" data-reactid="203">
-               <li class="site-nav__item site-nav__item--heading" data-reactid="204">
-                  <h4 data-reactid="205">About Us</h4>
-               </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="206"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/about/mission" data-reactid="207">Our Mission</a></li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="208"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/about/team" data-reactid="209">The Team</a></li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="212"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/about/press" data-reactid="213">Press</a></li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="214"><a class="site-nav__link site-nav__link--loud" href="{{ $navBaseUrl }}/about/hiring" data-reactid="215">We're Hiring!</a></li>
-            </ul>
-         </nav>
-         <nav class="site-nav" data-reactid="216">
-            <ul class="ui-list" data-reactid="217">
-               <li class="site-nav__item site-nav__item--heading" data-reactid="218">
-                  <h4 data-reactid="219">Support</h4>
-               </li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="220"><a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}" data-reactid="221">Docs</a></li>
-               <li class="site-nav__item site-nav__item--text" data-reactid="222"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/blog" data-reactid="223">Blog</a></li>
-            </ul>
-         </nav>
-         <nav class="site-nav" data-reactid="224">
-            <ul class="ui-list" data-reactid="225">
-               <li class="site-nav__item" data-reactid="226"><a class="site-nav__social github" href="https://github.com/grafana/" title="GitHub" target="_blank" rel="noopener noreferrer" data-reactid="227">GitHub</a></li>
-               <li class="site-nav__item" data-reactid="228"><a class="site-nav__social twitter" href="https://twitter.com/grafana" title="Twitter" target="_blank" rel="noopener noreferrer" data-reactid="229">Twitter</a></li>
-            </ul>
-         </nav>
-      </div>
-   </div>
+<div class="page-footer wrapper" data-reactid="166">   
    <p class="meta" data-reactid="230">
-	 <!-- react-text: 231 -->Copyright 2018 © Grafana Labs | <a href="{{ $navBaseUrl }}/contact">Contact us</a> | <!-- /react-text --><a href="{{ $navBaseUrl }}/trademark-policy" data-reactid="234">Trademark Policy</a><!-- react-text: 235 --> | <!-- /react-text --><a href="{{ $navBaseUrl }}/tos" data-reactid="236">Terms of Service</a>
+	   Copyright 2019 © Tvarit - APA
    </p>
 </div>
 

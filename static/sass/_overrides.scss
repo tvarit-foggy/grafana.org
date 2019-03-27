@@ -1,3 +1,8 @@
+$gray-5: #d0d5db;
+$gray-6: #e9edf2;
+
+$card-background: linear-gradient(135deg, $gray-6, $gray-5);
+$card-background-hover: linear-gradient(135deg, $gray-5, $gray-6);
 .main {
   line-height: 1.6;
 }
@@ -16,15 +21,15 @@ table {
   font-size: 16px;
 
   th {
-    background: $darker-gray2;
+    background: $card-background;
     text-align: left;
     padding: .4rem .625rem .4rem;
   }
 
   td  {
     padding: .4625rem .625rem;
-    border-right: 1px solid $darker-gray2;
-    border-bottom: 1px solid $darker-gray2;
+    border-right: 1px solid $gray-5;
+    border-bottom: 1px solid $gray-5;
 
     &:first-child {
       white-space: nowrap;

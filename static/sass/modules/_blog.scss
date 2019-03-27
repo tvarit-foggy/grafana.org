@@ -1,3 +1,8 @@
+$gray-5: #dde4ed;
+$gray-6: #e9edf2;
+
+$card-background: linear-gradient(135deg, $gray-6, $gray-5);
+
 .section-index,
 .section-blog {
 
@@ -45,7 +50,7 @@
 }
 
 blockquote {
-  background: $darker-gray;
+  background: $card-background;
   margin: $spacer;
   display: block;
   padding: $spacer;

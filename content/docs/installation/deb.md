@@ -73,7 +73,7 @@ information.
 #### Sub Platforms
 - [Installing on Debian / Ubuntu](debian.md)
 - [Installing on RPM-based Linux (CentOS, Fedora, OpenSuse, RedHat)](rpm.md)
-- [Installing on macOS](mac.md)
+- [Installing on Mac OS X](mac.md)
 - [Installing on Windows](windows.md)
 - [Installing on Docker](docker.md)
 - [Installing using Provisioning (Chef, Puppet, Salt, Ansible, etc)](provisioning.md)
