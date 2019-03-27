@@ -11,9 +11,16 @@
 {{ end }}
 
 <!-- Handle grafana production -->
-{{ if eq $baseUrl "http://grafana.org/"}}
+{{ if eq $baseUrl "http://cloud.tvarit.com/"}}
 	{{ if eq .link.Name "Docs" }}
-		{{ .scratch.Set "navBaseUrl" "http://docs.grafana.org" }}
+		{{ .scratch.Set "navBaseUrl" "http://docs.tvarit.com" }}
+	{{ end }}
+{{ end }}
+
+<!-- Handle grafana production -->
+{{ if eq $baseUrl "http://tvarit.com/"}}
+	{{ if eq .link.Name "Docs" }}
+		{{ .scratch.Set "navBaseUrl" "http://docs.tvarit.com" }}
 	{{ end }}
 {{ end }}
 
@@ -25,11 +32,11 @@
 {{ end }}
 
 <!-- Handle docs production -->
-{{ if eq $baseUrl "http://docs.grafana.org/"}}
-	{{ .scratch.Set "navBaseUrl" "http://grafana.org/" }}
+{{ if eq $baseUrl "http://docs.tvarit.com/"}}
+	{{ .scratch.Set "navBaseUrl" "http://tvarit.com/" }}
 
 	{{ if eq .link.Name "Docs" }}
-		{{ .scratch.Set "navBaseUrl" "http://docs.grafana.org" }}
+		{{ .scratch.Set "navBaseUrl" "http://docs.tvarit.com" }}
 	{{ end }}
 {{ end }}
 

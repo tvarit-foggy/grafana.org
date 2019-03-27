@@ -6,17 +6,17 @@
 
 		<title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
-		<meta name="keywords" content="{{ with .Keywords }}{{ delimit . ","}}{{ else }}Grafana, Graphite, Dashboard, InfluxDB, OpenTSDB, Elasticsearch, Metrics, Editor, Composer, Analytics, Graphana, Prometheus, Cloudwatch{{end}}">
-		<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Grafana is the leading open source project for visualizing metrics. Supporting rich integration for every popular database like Graphite, Prometheus and InfluxDB.{{ end }}">
+		<meta name="keywords" content="{{ with .Keywords }}{{ delimit . ","}}{{ else }}Tvarit, Graphite, Dashboard, InfluxDB, OpenTSDB, Elasticsearch, Metrics, Editor, Composer, Analytics, Graphana, Prometheus, Cloudwatch{{end}}">
+		<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}Tvarit is the leading open source project for visualizing metrics. Supporting rich integration for every popular database like Graphite, Prometheus and InfluxDB.{{ end }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<link rel="shortcut icon" href="/assets/img/fav32.png" type="image/x-icon">
 
-		<meta name="application-name" content="Grafana Labs" />
+		<meta name="application-name" content="Tvarit - APA" />
 
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@grafana">
-		<meta name="twitter:url" content="https://twitter.com/grafana" />
+		<meta name="twitter:site" content="@tvarit">
+		<meta name="twitter:url" content="https://twitter.com/tvarit" />
 		<meta name="twitter:title" content="{{ .Title }}">
 
 		{{ if and ((.IsPage) (isset .Params "cover_image")) }}
@@ -27,13 +27,13 @@
 			<meta property="og:image" content="https://grafana.com/img/home_panel_collage1.png" />
 		{{ end }}
 
-		<meta property="og:site_name" content="Grafana Labs Blog" />
+		<meta property="og:site_name" content="Tvarit - APA Blog" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="{{ .Title }}" />
 
 		{{ if .RSSLink }}
-			<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="Grafana Labs Blog" />
-			<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="Grafana Labs Blog" />
+			<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="Tvarit - APA Blog" />
+			<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="Tvarit - APA Blog" />
 		{{ end }}
 
 		<!-- build:css /css/styles.js -->
@@ -43,10 +43,10 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 
-		<meta name="Copyright" content="Grafana Labs" />
+		<meta name="Copyright" content="Tvarit - APA" />
 
 		{{ if and .IsPage  (eq .Type "docs") }}
-			<link rel="canonical" href="http://docs.grafana.org{{ .RelPermalink }}" />
+			<link rel="canonical" href="http://docs.tvarit.com{{ .RelPermalink }}" />
 		{{ end }}
 
 		<!-- build:js /js/app.bundle.js -->
