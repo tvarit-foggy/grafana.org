@@ -24,7 +24,7 @@ $card-background: linear-gradient(135deg, $gray-6, $gray-5);
     z-index: 1;
     box-shadow: 0 0 20px $black;
     margin-bottom: $spacer*3;
-    background: black;
+    background: rgb(255, 255, 255);
     padding-top: 9rem;
 
     &:after {
@@ -34,7 +34,7 @@ $card-background: linear-gradient(135deg, $gray-6, $gray-5);
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url(/assets/img/v2/home_hero_bg.jpg);
+     // background-image: url(/assets/img/v2/home_hero_bg.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
