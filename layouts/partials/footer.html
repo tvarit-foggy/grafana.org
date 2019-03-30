@@ -1,37 +1,106 @@
 </div>
 
 {{ $.Scratch.Set "navBaseUrl" "https://tvarit.com" }}
-{{ $.Scratch.Set "docsUrl" "http://tvarit.com/docs" }}
+{{ $.Scratch.Set "docsUrl" "http://docs.tvarit.com" }}
 {{ $baseUrl := (printf "%v" $.Site.BaseURL) }}
 
 {{ if hasPrefix $baseUrl "http://localhost" }}
-	{{ $.Scratch.Set "navBaseUrl" "http://localhost"}}
 	{{ $.Scratch.Set "docsUrl" "http://localhost:3004"}}
-{{ end }}
-
-{{ if hasPrefix $baseUrl "http://staging" }}
-	{{ $.Scratch.Set "navBaseUrl" "http://grafana-net.raintank.io"}}
-	{{ $.Scratch.Set "docsUrl" "http://staging-docs.grafana.org"}}
 {{ end }}
 
 {{ $navBaseUrl := .Scratch.Get "navBaseUrl" }}
 {{ $docsUrl := .Scratch.Get "docsUrl" }}
 
-<div class="page-footer wrapper" data-reactid="166">   
+<div class="page-footer wrapper" data-reactid="166">  
+		<div class="page-footer__nav" data-reactid="167">	
+				<div class="page-footer__col page-footer__col--left" data-reactid="168">	
+				   <nav class="site-nav" data-reactid="169">	
+					  <ul class="ui-list" data-reactid="170">	
+						 <li class="site-nav__item site-nav__item--heading" data-reactid="171">	
+							<h4 data-reactid="172">Tvarit - APA</h4>	
+						 </li>	
+						 <li class="site-nav__item site-nav__item--text" data-reactid="173">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/features/basic_concepts/"  target="_blank" data-reactid="174">Features</a>
+									   </li>
+						<li class="site-nav__item site-nav__item--text" data-reactid="173">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/use_cases.php"  target="_blank" data-reactid="174">Use Cases</a>
+									   </li>	
+						<li class="site-nav__item site-nav__item--text" data-reactid="173">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/white_paper.php"  target="_blank" data-reactid="174">White Paper</a>
+									   </li>
+						 <li class="site-nav__item site-nav__item--text" data-reactid="175">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/blogs.php"  target="_blank" data-reactid="176">Blogs</a>
+									   </li>	
+						<li class="site-nav__item site-nav__item--text" data-reactid="173">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/videos.php"  target="_blank" data-reactid="174">Videos</a>
+									   </li>
+					  </ul>	
+				   </nav>					
+				   <nav class="site-nav" data-reactid="187">	
+					  <ul class="ui-list" data-reactid="188">	
+						 <li class="site-nav__item site-nav__item--heading" data-reactid="189">	
+							<h4 data-reactid="190">Docs</h4>	
+						 </li>	
+						 <li class="site-nav__item site-nav__item--text" data-reactid="193">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/components/datasources/overview/" data-reactid="194" target="_blank">Data Sources</a>
+									   </li>
+						 <li class="site-nav__item site-nav__item--text" data-reactid="191">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/components/machines/" data-reactid="192" target="_blank">Machines</a>
+									   </li>	
+						<li class="site-nav__item site-nav__item--text" data-reactid="191">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/components/signals/" data-reactid="192" target="_blank">Signals</a>
+									   </li>
+						<li class="site-nav__item site-nav__item--text" data-reactid="191">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/components/jobs" data-reactid="192" target="_blank">Jobs</a>
+									   </li>
+						<li class="site-nav__item site-nav__item--text" data-reactid="191">	
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $docsUrl }}/features/panels/graph/" data-reactid="192" target="_blank">Panels</a>
+									   </li>
+					  </ul>	
+				   </nav>	
+						   <nav class="site-nav" data-reactid="187">	
+					  <ul class="ui-list" data-reactid="188">	
+						 <li class="site-nav__item site-nav__item--heading" data-reactid="189">	
+							<h4 data-reactid="190">Solutions</h4>	
+						 </li>	
+                         <li class="site-nav__item site-nav__item--text" data-reactid="191">
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/seminar_workshops.php" data-reactid="192" target="_blank">Seminar & Workshops</a>
+									   </li>
+						<li class="site-nav__item site-nav__item--text" data-reactid="191">
+								 <a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/consulting.php" data-reactid="192" target="_blank">Consultancy</a>
+									   </li>	
+					  </ul>	
+				   </nav>	
+				</div>	
+				<div class="page-footer__col page-footer__col--right" data-reactid="201">	
+				   <nav class="site-nav" data-reactid="202">	
+					  <ul class="ui-list" data-reactid="203">	
+						 <li class="site-nav__item site-nav__item--heading" data-reactid="204">	
+							<h4 data-reactid="205">About Us</h4>	
+						 </li>	
+               <li class="site-nav__item site-nav__item--text" data-reactid="206"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/about.php#Vision"  target="_blank" data-reactid="207">Our Vision</a></li>
+               <li class="site-nav__item site-nav__item--text" data-reactid="208"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/about.php#Leadership"  target="_blank" data-reactid="209">Leadership</a></li>
+               <li class="site-nav__item site-nav__item--text" data-reactid="212"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/about.php"  target="_blank" data-reactid="213">About Us</a></li>
+               <li class="site-nav__item site-nav__item--text" data-reactid="214"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/career.php"  target="_blank" data-reactid="215">Careers</a></li>
+               <li class="site-nav__item site-nav__item--text" data-reactid="214"><a class="site-nav__link site-nav__link--discrete" href="{{ $navBaseUrl }}/contact.php"  target="_blank" data-reactid="215">Contact Us</a></li>
+					  </ul>	
+				   </nav>					  
+         <nav class="site-nav" data-reactid="216">
+            <ul class="ui-list" data-reactid="217">
+                 </ul>
+         </nav>
+				   <nav class="site-nav" data-reactid="224">	
+					  <ul class="ui-list" data-reactid="225">	
+               <li class="site-nav__item" data-reactid="226"><a class="site-nav__social facebook" href="https://www.facebook.com/tvaritAI" title="Facebook" target="_blank" rel="noopener noreferrer" data-reactid="227">Facebook</a></li>
+               <li class="site-nav__item" data-reactid="228"><a class="site-nav__social xing" href="https://www.xing.com/xbp/pages/tvarit-gmbh" title="Xing" target="_blank" rel="noopener noreferrer" data-reactid="229">Xing</a></li>
+               <li class="site-nav__item" data-reactid="228"><a class="site-nav__social twitter" href="https://twitter.com/TvaritAI" title="Twitter" target="_blank" rel="noopener noreferrer" data-reactid="230">Twitter</a></li>
+               <li class="site-nav__item" data-reactid="228"><a class="site-nav__social linkedin" href="https://www.linkedin.com/company/tvarit/" title="LinkedIn" target="_blank" rel="noopener noreferrer" data-reactid="231">LinkedIn</a></li>
+               <li class="site-nav__item" data-reactid="228"><a class="site-nav__social youtube" href="https://www.youtube.com/playlist?list=PLqOwcayv0lYbbyKLjn6-A0w3Es4CKZpGr" title="Youtube" target="_blank" rel="noopener noreferrer" data-reactid="232">Youtube</a></li>
+					  </ul>	
+				   </nav>	
+				</div>	
+			 </div>
    <p class="meta" data-reactid="230">
-	   Copyright 2019 © Tvarit - APA
-   </p>
-</div>
+	<!-- react-text: 231 -->Copyright 2019 <a href="{{ $navBaseUrl }}/contact.php">Tvarit GmbH</a><br />This software is based on Grafana and Kibana | Copyright 2014-2018 Grafana La | Copyright 2012-2013 Elasticsearch BV</p>
+				 </div>
 
-{{ if .IsPage }}
-	{{ if eq .Type "docs" }}
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
-		<script type="text/javascript"> docsearch({
-			apiKey: '0bd2bd6939038c5ce2c9395732dcf040',
-			indexName: 'grafana',
-			inputSelector: '#docs-search-input',
-			debug: true // Set debug to true if you want to inspect the dropdown
-		});
-		</script>
-	{{ end }}
-{{ end }}
