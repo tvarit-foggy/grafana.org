@@ -57,7 +57,7 @@
   padding-top: $spacer*2;
 
   .site-nav__item--heading h4 {
-    color: $white;
+    color: $primary2-color;
     font-size: $font-size-gamma;
     font-style: normal;
     padding: rem-calc(0 15);
@@ -77,6 +77,6 @@
 }
 
 .page-footer .meta > a {
-  color: $primary-color;
+  color: #0562c7;
   font-weight: 700;
 }

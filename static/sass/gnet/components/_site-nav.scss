@@ -51,6 +51,15 @@
   }
 }
 
+.site-nav-logotitle {
+  position: absolute;
+  display: inline-block;
+  margin-left: 300px;
+  bottom: 0;
+}
+.site-nav-logotitle-span {
+  font-size: 28px;
+}
 .site-nav {
   @include at-least(nav) {
     padding: rem-calc(30 0 0 0);
@@ -121,17 +130,17 @@
 
 .site-nav__link {
   color: $off-white2;
-  font-size: rem-calc(15);
+  font-size: rem-calc(24);
   font-weight: 700;
   text-decoration: none;
   padding: rem-calc(7 15);
 
   &:hover {
-    color: $primary-color !important;
+    color: $primary2-color !important;
   }
 
   &--highlight {
-    color: $primary-color !important;
+    color: $primary2-color !important;
   }
 
   &--discrete {
@@ -166,11 +175,32 @@
 .site-nav__social.twitter {
   background: rgba(0,0,0,0.6) url(../../static/img/icon_twitter.svg) no-repeat center center;
   background-size: 80%;
+  margin-bottom: rem-calc(10);
 }
 
 .site-nav__social.github {
   background: rgba(0,0,0,0.6) url(../../static/img/icon_github.svg) no-repeat center center;
-  background-size: 90%;
+  background-size: 80%;
+  margin-bottom: rem-calc(10);
+}
+.site-nav__social.facebook {
+  background: rgba(0,0,0,0.6) url(../../static/img/facebook.svg) no-repeat center center;
+  background-size: 80%;
+  margin-bottom: rem-calc(10);
+}
+.site-nav__social.linkedin {
+  background: rgba(0,0,0,0.6) url(../../static/img/linkedin.svg) no-repeat center center;
+  background-size: 50%;
+  margin-bottom: rem-calc(10);
+}
+.site-nav__social.xing {
+  background: rgba(0,0,0,0.6) url(../../static/img/xing.svg) no-repeat center center;
+  background-size: 80%;
+  margin-bottom: rem-calc(10);
+}
+.site-nav__social.youtube {
+  background: rgba(0,0,0,0.6) url(../../static/img/youtube.svg) no-repeat center center;
+  background-size: 80%;
   margin-bottom: rem-calc(10);
 }
 
@@ -189,7 +219,7 @@
   border: 0;
   border-radius: rem-calc(4);
   outline: none;
-  background: transparent;
+  background: #fc0334;
 
   @include at-least(nav) {
     display: none;
