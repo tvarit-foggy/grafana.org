@@ -11,6 +11,13 @@
 {{ end }}
 
 <!-- Handle grafana production -->
+{{ if eq $baseUrl "http://cloud.tvarit.com/"}}
+	{{ if eq .link.Name "Docs" }}
+		{{ .scratch.Set "navBaseUrl" "http://docs.tvarit.com" }}
+	{{ end }}
+{{ end }}
+
+<!-- Handle grafana production -->
 {{ if eq $baseUrl "http://tvarit.com/"}}
 	{{ if eq .link.Name "Docs" }}
 		{{ .scratch.Set "navBaseUrl" "http://docs.tvarit.com" }}
