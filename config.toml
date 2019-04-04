@@ -1,6 +1,6 @@
-baseUrl = "https://grafana.com/"
+baseUrl = "https://tvarit.com/"
 languageCode = "en-us"
-title = "Grafana Labs Blog"
+title = "Tvarit : APA Documentation"
 canonifyURLs = true
 relativeURLs = false
 verbose = true

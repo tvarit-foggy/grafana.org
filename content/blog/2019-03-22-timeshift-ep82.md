@@ -12,7 +12,7 @@ excerpt = "TimeShift is back after a few weeks away with a lot of updates to sha
 +++
 
 ### Welcome to TimeShift
-This week we have a number of articles from the Grafana Labs blog we'd like to share, plus a new panel plugin and other updates. Also, take a look at our upcoming events. If you're going to be attending any of them, please come and say hello!
+This week we have a number of articles from the Tvarit : APA Documentation we'd like to share, plus a new panel plugin and other updates. Also, take a look at our upcoming events. If you're going to be attending any of them, please come and say hello!
 
 See an article we missed? [Contact us](mailto:hello@grafana.com).
 
